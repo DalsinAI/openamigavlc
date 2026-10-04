@@ -1,0 +1,27 @@
+Short:        VLC media player, unofficial OS3 port
+Uploader:     (Dale fills this in at upload time)
+Author:       VideoLAN (VLC); Amiga port: Dale Kirkwood
+Type:         gfx/show
+Version:      0.1
+Requires:     OpenRTG, OpenGPU, OpenMedia, AHI; OpenSocket for streams
+Architecture: m68k-amigaos >= 3.2.0
+Distribution: Aminet
+
+An unofficial port of the VLC media player to AmigaOS 3.x, not made or
+endorsed by VideoLAN.
+
+Video goes through OpenRTG and OpenGPU (a window or full screen on any
+monitor, frames scaled and converted without a copy through the CPU), decoding
+through OpenMedia (the graphics chip's video engines, the PC's on AmigaChrome,
+a PiStorm's VideoCore, or FFmpeg on the CPU), sound through AHI and network
+streams through OpenSocket, with a GadTools window.
+
+Status: planned; this readme is ready for the first release.
+
+Licences: libVLC, libvlccore and most modules are LGPL 2.1 or later, as are
+the Amiga modules (Copyright (c) 2026 Dalsin Limited); the player and some
+modules are GPL 2 or later; FFmpeg keeps its own. The full texts and the
+source come with the archive. VLC and the cone are trademarks of VideoLAN.
+
+Source: https://github.com/DalsinAI/openamigavlc (the Amiga port) and
+https://code.videolan.org/videolan/vlc (VLC)
