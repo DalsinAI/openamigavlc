@@ -1,6 +1,6 @@
 Short:        VLC media player, unofficial OS3 port
-Uploader:     (Dale fills this in at upload time)
-Author:       VideoLAN (VLC); Amiga port: Dale Kirkwood
+Uploader:     (We fill this in at upload time)
+Author:       VideoLAN (VLC); Amiga port: Dalsin Limited
 Type:         gfx/show
 Version:      0.1
 Requires:     OpenRTG, OpenGPU, OpenMedia, AHI; OpenSocket for streams

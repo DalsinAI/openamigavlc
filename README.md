@@ -7,7 +7,7 @@ board. Decoding goes through OpenMedia (the graphics chip's video engines, or
 the PC's on AmigaChrome), sound through AHI, and network streams through
 OpenSocket. This is an unofficial port, not made or endorsed by VideoLAN.
 
-Dale, 4 October 2026: "can we port VLC to the Amiga based on our OpenRTG,
+We, 4 October 2026: "can we port VLC to the Amiga based on our OpenRTG,
 OpenGPU, and the not specified openmediahardware project", and "it should
 have a GadTools interface but leverage OpenRTG as much as possible".
 `PORTING.md` is the plan.
@@ -17,7 +17,7 @@ Status, 4 October 2026: planned.
 ## Licences
 
 Our files are MIT; VLC's files keep VLC's licences, and everything we ship
-complies with them. Dale, 4 October 2026: "we want to stay legal, so we
+complies with them. We, 4 October 2026: "we want to stay legal, so we
 comply with the licences; our parts are MIT".
 
 - **Our files** are MIT, Copyright (c) 2026 Dalsin Limited (`LICENSE`). This
@@ -48,4 +48,4 @@ checked before anything is released under that name.
 
 If you use or build on our part of this work, we ask (we do not require)
 that you credit Dalsin Limited and AmigaChrome. The Amiga port was started by
-Dale Kirkwood at Dalsin Limited, for AmigaChrome.
+Dalsin Limited, for AmigaChrome.

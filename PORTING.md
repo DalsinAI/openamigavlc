@@ -26,12 +26,12 @@ interface and MIT-licensed (see the README).
 
 ## The interface: GadTools controls, OpenRTG drawing
 
-Dale, 4 October 2026: "it should have a GadTools interface but leverage
+We, 4 October 2026: "it should have a GadTools interface but leverage
 OpenRTG as much as possible". GadTools draws the controls. OpenRTG and
 OpenGPU draw everything else, and the CPU never touches a pixel of the
 picture.
 
-**Why GadTools.** Dale, the same day: "GadTools is universal and we can
+**Why GadTools.** We, the same day: "GadTools is universal and we can
 always alter its look and feel with a patch or tweak to the relevant library,
 not chase our tail across a dozen UI things". GadTools runs on every OS 3.x
 and on AROS. Its gadgets are drawn by intuition's frameiclass and sysiclass,
