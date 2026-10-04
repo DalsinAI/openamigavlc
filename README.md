@@ -1,37 +1,51 @@
 # VLC for AmigaOS (port in progress)
 
-A port of the VLC media player to AmigaOS 3.x, on the Open family: video
-through OpenRTG and OpenGPU, decoding through OpenMedia (the graphics chip's
-video engines, or the PC's on AmigaChrome), sound through AHI, network streams
-through OpenSocket, and a GadTools window. This is an unofficial port; it is
-not made or endorsed by VideoLAN.
+A port of the VLC media player to AmigaOS 3.x. It has a GadTools interface
+and leaves the drawing to OpenRTG and OpenGPU wherever it can: frames stay in
+video RAM, and they are converted, scaled and composited by the graphics
+board. Decoding goes through OpenMedia (the graphics chip's video engines, or
+the PC's on AmigaChrome), sound through AHI, and network streams through
+OpenSocket. This is an unofficial port, not made or endorsed by VideoLAN.
 
 Dale, 4 October 2026: "can we port VLC to the Amiga based on our OpenRTG,
-OpenGPU, and the not specified openmediahardware project, that work will drive
-that media hardware idea". `PORTING.md` is the plan.
+OpenGPU, and the not specified openmediahardware project", and "it should
+have a GadTools interface but leverage OpenRTG as much as possible".
+`PORTING.md` is the plan.
 
 Status, 4 October 2026: planned.
 
 ## Licences
 
-Unlike the rest of the Open family, this repository is not MIT, because it is
-VLC's code and ours joined to it:
+Our files are MIT; VLC's files keep VLC's licences, and everything we ship
+complies with them. Dale, 4 October 2026: "we want to stay legal, so we
+comply with the licences; our parts are MIT".
 
-- libVLC and libvlccore, and most of VLC's modules, are under the GNU Lesser
-  General Public License 2.1 or later (`COPYING.LIB`). Our Amiga modules
-  (video output, audio output, the OpenMedia decoder, the window) are under
-  the same licence, Copyright (c) 2026 Dalsin Limited.
-- The VLC player and some modules are under the GNU General Public License 2
-  or later (`COPYING`).
-- FFmpeg, when built in, keeps its own licence (LGPL 2.1 or later, or GPL with
-  some options).
-- OpenMedia, OpenRTG, OpenGPU and OpenSocket themselves are MIT, in their own
-  repositories; this port only uses them.
+- **Our files** are MIT, Copyright (c) 2026 Dalsin Limited (`LICENSE`). This
+  covers the Amiga modules (the GadTools interface, OpenRTG video output, AHI
+  audio output, the OpenMedia decoder), the build scripts and the documents.
+  Each source file says so on an SPDX line (`SPDX-License-Identifier: MIT`).
+- **VLC's code** belongs to VideoLAN and its authors and keeps its licences.
+  libVLC, libvlccore and most modules are LGPL 2.1 or later (`COPYING.LIB`).
+  The player and some modules are GPL 2 or later (`COPYING`). A change we make
+  to one of VLC's files stays under that file's licence. FFmpeg, when built
+  in, keeps its own licence.
+- **Written fresh.** Our modules are written against VLC's module interface,
+  not copied from VLC's modules, so they can be MIT. A file that does start
+  from one of VLC's files keeps VLC's licence and says so on its SPDX line.
+- **What we ship complies.** The built player is a GPL 2-or-later program as
+  a whole. MIT code may be part of it, and our files stay MIT on their own.
+  Every release names the VLC version and includes `COPYING`, `COPYING.LIB`
+  and `LICENSE`. It also includes the complete source (our files, VLC's, and
+  our changes to VLC's), or a written offer of it.
+- OpenMedia, OpenRTG, OpenGPU and OpenSocket are MIT, in their own
+  repositories. This port only uses them.
 
-VLC's source is VideoLAN's (https://code.videolan.org/videolan/vlc); this
-repository holds what the Amiga needs on top of a pinned VLC version.
+VLC's source comes from VideoLAN (https://code.videolan.org/videolan/vlc), at
+a pinned release. This repository holds what the Amiga needs on top of it.
 
 "VLC" and the cone are VideoLAN's trademarks. Their trademark policy is
 checked before anything is released under that name.
 
-Our Amiga port was started by Dale Kirkwood at Dalsin Limited, for AmigaChrome.
+If you use or build on our part of this work, we ask (we do not require)
+that you credit Dalsin Limited and AmigaChrome. The Amiga port was started by
+Dale Kirkwood at Dalsin Limited, for AmigaChrome.

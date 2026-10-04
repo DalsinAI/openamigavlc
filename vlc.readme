@@ -10,18 +10,25 @@ Distribution: Aminet
 An unofficial port of the VLC media player to AmigaOS 3.x, not made or
 endorsed by VideoLAN.
 
-Video goes through OpenRTG and OpenGPU (a window or full screen on any
-monitor, frames scaled and converted without a copy through the CPU), decoding
-through OpenMedia (the graphics chip's video engines, the PC's on AmigaChrome,
-a PiStorm's VideoCore, or FFmpeg on the CPU), sound through AHI and network
-streams through OpenSocket, with a GadTools window.
+A GadTools interface, with the drawing left to OpenRTG and OpenGPU: frames
+stay in video RAM and are converted, scaled and composited by the graphics
+board, subtitles and the on-screen display are alpha surfaces over the
+picture, and full screen opens on any monitor. Decoding goes through OpenMedia
+(the graphics chip's video engines, the PC's on AmigaChrome, a PiStorm's
+VideoCore, or FFmpeg on the CPU), sound through AHI and network streams
+through OpenSocket. Picasso96 and CyberGraphX systems get a slower fallback.
 
 Status: planned; this readme is ready for the first release.
 
-Licences: libVLC, libvlccore and most modules are LGPL 2.1 or later, as are
-the Amiga modules (Copyright (c) 2026 Dalsin Limited); the player and some
-modules are GPL 2 or later; FFmpeg keeps its own. The full texts and the
-source come with the archive. VLC and the cone are trademarks of VideoLAN.
+Licences: our Amiga modules are MIT, Copyright (c) 2026 Dalsin Limited. VLC's
+own code keeps its licences: libVLC, libvlccore and most modules are LGPL 2.1
+or later, and the player and some modules GPL 2 or later. FFmpeg keeps its
+own. The player as a whole is distributed under the GPL 2 or later, with every
+licence text and the complete source in the archive. VLC and the cone are
+trademarks of VideoLAN.
+
+If you build on our part, we ask that you credit Dalsin Limited and
+AmigaChrome.
 
 Source: https://github.com/DalsinAI/openamigavlc (the Amiga port) and
 https://code.videolan.org/videolan/vlc (VLC)
