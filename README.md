@@ -49,3 +49,7 @@ checked before anything is released under that name.
 If you use or build on our part of this work, we ask (we do not require)
 that you credit Dalsin Limited and AmigaChrome. The Amiga port was started by
 Dalsin Limited, for AmigaChrome.
+
+## Contributors
+
+VLC for AmigaOS is created and maintained by [SacredTrees](https://github.com/SacredTrees) with the AmigaChrome agent team, copyright Dalsin Limited. Everyone whose work it includes is credited in [`CONTRIBUTORS.md`](CONTRIBUTORS.md).
