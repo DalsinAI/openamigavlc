@@ -1,4 +1,4 @@
-# VLC for AmigaOS (port in progress)
+# VLC for AmigaOS (planned)
 
 A port of the VLC media player to AmigaOS 3.x. It has a GadTools interface
 and leaves the drawing to OpenRTG and OpenGPU wherever it can: frames stay in
