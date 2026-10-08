@@ -14,7 +14,7 @@ A GadTools interface, with the drawing left to OpenRTG and OpenGPU: frames
 stay in video RAM and are converted, scaled and composited by the graphics
 board, subtitles and the on-screen display are alpha surfaces over the
 picture, and full screen opens on any monitor. Decoding goes through OpenMedia
-(the graphics chip's video engines, the PC's on AmigaChrome, a PiStorm's
+(the graphics chip's video engines, the GPU's on AmigaChrome, a PiStorm's
 VideoCore, or FFmpeg on the CPU), sound through AHI and network streams
 through OpenSocket. Picasso96 and CyberGraphX systems get a slower fallback.
 

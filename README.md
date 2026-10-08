@@ -4,7 +4,7 @@ A port of the VLC media player to AmigaOS 3.x. It has a GadTools interface
 and leaves the drawing to OpenRTG and OpenGPU wherever it can: frames stay in
 video RAM, and they are converted, scaled and composited by the graphics
 board. Decoding goes through OpenMedia (the graphics chip's video engines, or
-the PC's on AmigaChrome), sound through AHI, and network streams through
+the GPU's on AmigaChrome), sound through AHI, and network streams through
 OpenSocket. This is an unofficial port, not made or endorsed by VideoLAN.
 
 We, 4 October 2026: "can we port VLC to the Amiga based on our OpenRTG,
