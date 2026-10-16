@@ -1,6 +1,6 @@
 Short:        VLC media player, unofficial OS3 port
 Uploader:     (We fill this in at upload time)
-Author:       VideoLAN (VLC); Amiga port: Dalsin Limited
+Author:       VideoLAN (VLC); Amiga port: AmigaChrome Team
 Type:         gfx/show
 Version:      0.1
 Requires:     OpenRTG, OpenGPU, OpenMedia, AHI; OpenSocket for streams
@@ -20,14 +20,14 @@ through OpenSocket. Picasso96 and CyberGraphX systems get a slower fallback.
 
 Status: planned; this readme is ready for the first release.
 
-Licences: our Amiga modules are MIT, Copyright (c) 2026 Dalsin Limited. VLC's
+Licences: our Amiga modules are MIT, Copyright (c) 2026 AmigaChrome Team. VLC's
 own code keeps its licences: libVLC, libvlccore and most modules are LGPL 2.1
 or later, and the player and some modules GPL 2 or later. FFmpeg keeps its
 own. The player as a whole is distributed under the GPL 2 or later, with every
 licence text and the complete source in the archive. VLC and the cone are
 trademarks of VideoLAN.
 
-If you build on our part, we ask that you credit Dalsin Limited and
+If you build on our part, we ask that you credit the AmigaChrome Team and
 AmigaChrome.
 
 Source: https://github.com/DalsinAI/openamigavlc (the Amiga port) and
